@@ -1,0 +1,5 @@
+git clone <link>
+go to directry by cd <file name>
+git add. or git add <file_name>
+git commit -m "comment"
+git push  origin <directry_name_on github>
