@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>chai or code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // ////////////////set time out?//////////////
+// src="script.js"
+// setTimeout(function () {
+//     console.log("vikash");
+// },3000);
+
+
+// const Say= function () {
+//     console.log("vikas");
+// };
+// const changeText= function () {
+//     document.querySelector('h1').innerHTML="hello my name is vikash";
+// }
+//  const change_me =setTimeout(changeText, 2000);
+//  document.querySelector('#stop').addEventListener('click',function 
+// () {
+//     clearTimeout(change_me);
+//     console.log("stopped");
+// })
+// ///////////////////////////////set interval
+const Say= function () {
+    console.log("hello",Date.now());
+}
+const inter=setInterval(Say,1000);
+clearInterval(inter);
+
+
+</script>
+</html>

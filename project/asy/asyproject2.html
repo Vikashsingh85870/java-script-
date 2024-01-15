@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: larger;
+
+
+
+        }
+
+        div {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ir">
+        <div id="inner"><b>enter the any character</b></div>
+    </div>
+</body>
+<script>
+    const insert = document.getElementById('inner')
+    window.addEventListener('keydown',(e)=>{
+        insert.innerHTML=`
+        <div class='color'>
+            <table>
+                <tr>
+                    <th>key</th>
+                    <th>Keycode</th>
+                    <th>code</th>
+                 </tr>  
+                 <tr>
+                    <td>${e.key===' '?'space':e.key}</td>
+                    <td>${e.keyCode}</td>
+                    <td>${e.code}</td>
+                    </tr>
+
+            </table>
+            </div>
+        `
+    })
+</script>
+</html>
